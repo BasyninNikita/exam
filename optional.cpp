@@ -1,3 +1,4 @@
+// не компилируется , писал по стандарту, вообще хз 
 template <class T>
 class my_opt {
 public:
@@ -28,7 +29,7 @@ public:
 	{
 		if (!ok)
 		{
-			throw(std::bad_optional_access);
+			throw(std::bad_optional_access{});
 			// ??
 		}
 		else
